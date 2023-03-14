@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'aplicacion/imagen/estilos.css'%}"> 
+<title>
+  {% block title%}
+    inicio
+  {%endblock%}
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" href="{% static 'aplicacion/styles.css'%}" type="text/css" /> 
+</head>
+
+<body>
+<h1 style="color:rebeccapurple"> Menu de opciones </h1>
+
+<hr/>
+<div id="menu">
+
+  <ul>
+    <li><a href="{% url 'Crear_curso' %}">Crear_curso</a></li>
+    <li><a href="{% url 'Crear_estudiante' %}">Crear_estudiante</a></li>
+    <li><a href="{% url 'Crear_profesor' %}">Crear_profesor</a></li>
+    <li><a href="{% url 'busqueda' %}">busqueda</a></li>
+  </ul>
+
+</div>
+{% block contenido_nuevo%}
+{% endblock %}
+</body>
+</html>

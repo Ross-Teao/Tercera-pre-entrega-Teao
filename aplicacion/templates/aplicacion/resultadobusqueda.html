@@ -1,0 +1,39 @@
+{% extends "aplicacion/index.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% block contenido_nuevo%}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title%}
+
+        resultados - Busqueda
+        
+        {% endblock %}
+    </title>
+</head>
+<body>
+
+    <h2>Estamos buscando el curso: {{camada}}</h2>
+
+    {% if cursos %}
+
+    <ul>
+        {% for curso in cursos %}
+
+        <li> Nombre: {{curso.nombre}}</li>
+        <li> Curso:  {{curso.camada}} </li>
+        <p></p>
+
+        {% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+</body>
+</html>
+{% endblock %}

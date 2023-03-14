@@ -1,0 +1,22 @@
+body{
+
+    margin: 250px;
+    padding: 250px;
+    background: url(fondo.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+table {
+    table-layout: auto;
+    width: 20%;
+    border-collapse: collapse;
+    
+    
+  }
+
+  th,table,tr {
+    
+    padding: 20px;
+  }
